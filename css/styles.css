@@ -1,0 +1,38 @@
+.container {  
+  width: 500px;
+  height: 500px;  
+  position: relative;
+}
+.square {  
+  width: 100px;
+  height: 100px;  
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: move 4s infinite;}
+
+@keyframes move {
+  0% {    
+    top: 0;
+    left: 0;    
+    background-color: red;
+  }  25% {
+    top: 400px;    
+    left: 0;
+    background-color: blue;  
+  }
+  50% {
+    top: 400px;
+    left: 400px;    
+    background-color: green;
+  }  75% { 
+    top: 0;   
+    left: 400px;
+    background-color: yellow;  
+  }
+  100% {
+    top: 0;
+    left: 0;    
+    background-color: red;
+  }
+}
